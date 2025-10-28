@@ -15,7 +15,8 @@ body {
 .hero {
     display: flex;
     height: 600px;
-    width: 100%;
+    width: 98%;
+    margin: 0 20px;
     padding: 128px 149px;
     flex-direction: column;
     align-items: flex-start;
@@ -517,4 +518,4 @@ letter-spacing: -0.312px;
     letter-spacing: -0.312px;
 }
 
-/*media queries*/       
+/*media queries*/
