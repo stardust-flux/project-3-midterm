@@ -25,7 +25,7 @@ body {
     background: linear-gradient(90deg, rgba(123, 51, 6, 0.90) 0%, rgba(151, 60, 0, 0.80) 100%), url('../images/hero.png') lightgray 50% / cover no-repeat;
 }
 
-.hero.textbox {
+.herotextbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +72,7 @@ letter-spacing: -0.312px;
     font-size: 16px;
 }
 
-.button.container {
+.buttoncontainer {
     display: flex;
     width: 768px;
     align-items: flex-start;
@@ -132,7 +132,7 @@ letter-spacing: -0.312px;
     letter-spacing: -0.15px;
 }
 
-.time.place {
+.timeplace {
     display: flex;
     width: 768px;
     height: 24px;
@@ -140,7 +140,7 @@ letter-spacing: -0.312px;
     gap: 24px;
 }
 
-.time.place p {
+.timeplace p {
     color: #FFF;
 
     /* body */
@@ -152,14 +152,14 @@ letter-spacing: -0.312px;
     letter-spacing: -0.312px;
 }
 
-.icon.text.container {
+.icontextcontainer {
     display: flex;
     height: 24px;
     align-items: center;
     gap: 8px;
 }
 
-.text.section {
+.textsection {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,11 +179,11 @@ letter-spacing: -0.312px;
     background: #FEF3C6;
 }
 
-.card.container {
+.cardcontainer {
     width: 961px;
     height: 613px;
     gap: 119px;
-    display: grid;
+    display: flex;
 }
 
 .card {
@@ -199,7 +199,7 @@ letter-spacing: -0.312px;
     box-shadow: 0 2px 8px 4px rgba(0, 0, 0, 0.16);
 }
 
-.card.textbox {
+.cardtextbox {
     display: flex;
     padding: 24px;
     flex-direction: column;
@@ -209,7 +209,7 @@ letter-spacing: -0.312px;
     align-self: stretch;
 }
 
-.card.icon.section {
+.cardiconsection {
     display: flex;
     height: 24px;
     align-items: center;
@@ -246,7 +246,7 @@ letter-spacing: -0.312px;
     letter-spacing: -0.312px;
 }
 
-.card.image {
+.cardimage {
     height: 369px;
     align-self: stretch;
     background: lightgray 50% / cover no-repeat;
@@ -254,22 +254,49 @@ letter-spacing: -0.312px;
 
 .deal {
     display: flex;
-    width: 864px;
-    height: 212px;
-    padding: 32px 0 32px 32px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    border-radius: 16px;
-    background: linear-gradient(90deg, #FE9A00 0%, #E17100 100%);
+width: 864px;
+height: 212px;
+padding: 32px 0 32px 32px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 24px;
+border-radius: 16px;
+background: linear-gradient(90deg, #FE9A00 0%, #E17100 100%);
+color: #FFFBEB;
+text-align: center;
+font-family: Arial;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: -0.312px;
 }
 
-.deal.price.section {
+.deal h2 {
+    color: #FFF;
+text-align: center;
+font-family: Arial;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 50% */
+letter-spacing: -0.312px;
+}
+
+.dealpricesection {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
+    color: #FFF;
+text-align: center;
+font-family: Arial;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 75% */
+letter-spacing: -0.312px;
 }
 
 .features {
@@ -283,24 +310,23 @@ letter-spacing: -0.312px;
     background: #FFFBEB;
 }
 
-.feature.cards {
-    display: grid;
+.featurecards {
+    display: flex;
     width: 1024px;
     height: 160px;
     row-gap: 32px;
     column-gap: 32px;
-    grid-template-rows: repeat(1, minmax(0, 1fr));
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    flex-direction: row;
 }
 
-.feature.card {
+.featurecard {
     flex: 1 0 0;
     align-self: stretch;
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
 }
 
-.icon.container {
+.iconcontainer {
     display: flex;
     width: 64px;
     height: 64px;
